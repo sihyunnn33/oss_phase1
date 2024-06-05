@@ -19,5 +19,7 @@ int main(void)
 			i--;
 	}
 
+	printf("Start Game! \n");
+
 	return 0;
 }
