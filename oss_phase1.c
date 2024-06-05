@@ -10,5 +10,14 @@ int main(void)
 	int challenge = 1;
 	int strike = 0, ball = 0;
 
+	srand((int)time(NULL));
+
+	for (int i = 0; i < 3; i++)
+	{
+		com[i] = rand() % 10;
+		if (com[i] == com[i - 1])
+			i--;
+	}
+
 	return 0;
 }
