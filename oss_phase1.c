@@ -29,6 +29,17 @@ int main(void)
 		printf("enter 3 numbers(0~9) :");
 		scanf("%d %d %d", &user[0], &user[1], &user[2]);
 
+		for (int i = 0; i < 3; i++)
+		{
+			if (com[i] == user[i])
+				strike++;
+			else if (com[i] == user[i - 1] || com[i] == user[i + 1] || com[i] == user[i + 2])
+				ball++;
+		}
+		printf("%dth challenge result : %d strike, %d ball !! \n", challenge, strike, ball);
+
+		challenge++;
+
 	}
 
 	return 0;
