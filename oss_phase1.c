@@ -40,6 +40,12 @@ int main(void)
 
 		challenge++;
 
+		if (strike == 3)
+		{
+			printf("Game Over !");
+			break;
+		}
+
 	}
 
 	return 0;
