@@ -21,5 +21,15 @@ int main(void)
 
 	printf("Start Game! \n");
 
+	while (1)
+	{
+		strike = 0;
+		ball = 0;
+
+		printf("enter 3 numbers(0~9) :");
+		scanf("%d %d %d", &user[0], &user[1], &user[2]);
+
+	}
+
 	return 0;
 }
