@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 
 #define BASE_NUM 4
@@ -50,7 +51,7 @@ void generate_all_possible_numbers(int possible_numbers[][4], int *count) { //°¡
             (*count)++;
         }
     }
-	//printf("%d",count);
+	
 }
 
 void get_feedback(int *guess, int *numbers, int *strike, int *ball, int *out) {
@@ -174,6 +175,8 @@ int main(void) {
     if (user_strike < 4 && computer_strike < 4) {
         printf("It's a draw!\n");
     }
+
+    sleep(5);
 
     return 0;
 }
